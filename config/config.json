@@ -30,8 +30,7 @@
             "enabled": true,
             "priority": 130,
             "module": {
-                "name": "kraken-js/middleware/404",
-                "arguments": [ "errors/404" ]
+                "name": "path:./lib/errors/404"
             }
         },
 
@@ -39,8 +38,7 @@
             "enabled": true,
             "priority": 140,
             "module": {
-                "name": "kraken-js/middleware/500",
-                "arguments": [ "errors/500" ]
+                "name": "path:./lib/errors/500"
             }
         }
 

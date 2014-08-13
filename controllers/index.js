@@ -9,10 +9,13 @@ module.exports = function (router) {
     var model = new IndexModel();
 
 
-    router.get('/', function (req, res) {
-        
-        res.json(model);
-        
+    router.get('/', function(req, res, next) {
+            next(new Error('oops'));
+        },
+        function (req, res) {
+
+            res.json(model);
+
     });
 
     router.get('/foo', function (req, res) {
